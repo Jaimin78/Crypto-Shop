@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ea2511dba6.js" crossorigin="anonymous"></script>
+
+    <title>Crypto Shop</title>
+    <style>
+        body {
+            background-color: #857d7d;
+            ;
+        }
+
+        /* CSS Reset */
+        @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,200&display=swap');
+
+        * {
+            font-family: 'Nunito Sans', sans-serif;
+            padding: 0;
+            margin: 0;
+        }
+
+        /* Profile */
+        @import url('https://fonts.googleapis.com/css2?family=Rubik:ital@1&display=swap');
+
+        .div1 img {
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+        }
+
+        .div1 img:hover {
+            background-color: white;
+            border-radius: 50%;
+        }
+
+        .div1 p {
+            font-family: 'Rubik', sans-serif;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .div1 p:hover {
+            color: rgb(252, 252, 252);
+        }
+
+        hr {
+            margin-top: 5px;
+            margin-left: 5px;
+            margin-right: 9px;
+            border: 2px solid black;
+        }
+
+        /* Navbar */
+        .div2 ul {
+            margin: 30px 25px;
+        }
+
+        .div2 li {
+            font-family: 'Rubik', sans-serif;
+            list-style: none;
+            padding: 30px 0px;
+            cursor: pointer;
+            margin: 5px;
+            font-size: 20px;
+        }
+
+        .div2 li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .div2 li a:hover {
+            color: rgb(252, 252, 252);
+        }
+
+        /* Heading */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
+        .div3 h1 {
+            font-family: 'Roboto Mono', monospace;
+            margin: 30px;
+            background-color: black;
+            color: white;
+            border: 2px solid darkslategray;
+            border-radius: 20px;
+            font-size: 34px;
+        }
+
+        .div4 img {
+            height: 110px;
+            width: 110px;
+            padding: 12px;
+            margin: 4px 30px;
+        }
+
+        /* table */
+
+        table.GeneratedTable {
+            margin: 60px;
+            width: 90%;
+            background-color: #171717;
+            border-collapse: collapse;
+            border-width: 2px;
+            border-color: #65635d;
+            border-style: double;
+            color: #fcfcfc;
+        }
+
+        table.GeneratedTable td,
+        table.GeneratedTable th {
+            border-width: 2px;
+            border-color: #65635d;
+            border-style: ridge;
+            padding: 5px;
+        }
+
+        table.GeneratedTable thead {
+            background-color: #262626;
+        }
+
+        .div5 img {
+            width: 20px;
+            height: 20px;
+        }
+
+        #graph {
+            width: auto;
+            height: 50px;
+        }
+
+        #red {
+            color: red;
+        }
+
+        /* footer */
+
+        .div6 p {
+            padding: 13px;
+            background-color: black;
+            color: white;
+            font-size: 14px;
+        }
+
+        /* layout/ */
+        .parent {
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            grid-template-rows: repeat(6, 1fr);
+            grid-column-gap: 30px;
+            grid-row-gap: 0px
+        }
+
+        .div1 {
+            grid-area: 1 / 1 / 2 / 2;
+            border-right: 2px solid;
+            text-align: center;
+        }
+
+        .div2 {
+            grid-area: 2 / 1 / 6 / 1;
+            border-right: 2px solid;
+            text-align: center;
+        }
+
+        .div3 {
+            grid-area: 1 / 2 / 2 / 11;
+            /* border: 2px solid red; */
+            text-align: center;
+        }
+
+        .div4 {
+            grid-area: 2 / 2 / 3 / 11;
+            border: 2px solid darkslategray;
+            text-align: center;
+            border-radius: 100px;
+            background-color: black;
+        }
+
+        .div5 {
+            grid-area: 3 / 2 / 6 / 11;
+            /* border: 2px solid red; */
+            text-align: center;
+        }
+
+        .div6 {
+            grid-area: 6 / 1 / 6 / 11;
+            /* border: 2px solid red;*/
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="div1">
+            <img src="/img/profile.png" alt="profile">
+            <p>Profile</p>
+            <hr>
+        </div>
+        <div class="div2">
+            <ul>
+                <li><a href="#">Spot</a></li>
+                <li><a href="#">Futchers</a></li>
+                <li><a href="#">Watchlist</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Log out</a></li>
+            </ul>
+        </div>
+        <div class="div3">
+            <H1>Welcome To CryptoCurrancy Shop</H1>
+        </div>
+        <div class="div4">
+
+            <img src="img/b.png" alt="Binance">
+            <img src="img/bitcoin.png" alt="bitcoin">
+            <img src="img/Cardano.png" alt="Cardano">
+            <img src="img/Ethereum.png" alt="Ethereum">
+            <img src="img/Tether.png" alt="Tether">
+
+        </div>
+        <div class="div5">
+            <table class="GeneratedTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>24h %</th>
+                        <th>7d %</th>
+                        <th>Market Cap <i class="fas fa-info-circle"></i></th>
+                        <th>Volumo(24h) <i class="fas fa-info-circle"></i></th>
+                        <th>Circulating Supply <i class="fas fa-info-circle"></i></th>
+                        <th>Last 7 Days</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="img/bitcoin.png" alt="bitcoin">Bitcoin BTC <i class="fas fa-shopping-cart"></i>
+                        </td>
+                        <td>$45,218.997</td>
+                        <td id="red">-4.62%</td>
+                        <td id="red">10.16%</td>
+                        <td>$850,378,457,751</td>
+                        <td>$454,544,445,144</td>
+                        <td> <i class="fas fa-info-circle"></i> 18,814,46,515 BTC</td>
+                        <td><img id="graph" src="img/graph.PNG" alt="graph"> <i class="fas fa-ellipsis-v"></i></td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/Ethereum.png" alt="Ethereum">Ethereum ETH <i class="fas fa-shopping-cart"></i>
+                        </td>
+                        <td>$45,218.997</td>
+                        <td id="red">-4.62%</td>
+                        <td id="red">10.16%</td>
+                        <td>$850,378,457,751</td>
+                        <td>$454,544,445,144</td>
+                        <td>18,814,46,515 ETH</td>
+                        <td><img id="graph" src="img/graph.PNG" alt="graph"> <i class="fas fa-ellipsis-v"></i></td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/Cardano.png" alt="Cardano">Cardano ADA <i class="fas fa-shopping-cart"></i>
+                        </td>
+                        <td>$45,218.997</td>
+                        <td id="red">-4.62%</td>
+                        <td id="red">10.16%</td>
+                        <td>$850,378,457,751</td>
+                        <td>$454,544,445,144</td>
+                        <td> <i class="fas fa-info-circle"></i> 18,814,46,515 ADA</td>
+                        <td><img id="graph" src="img/graph.PNG" alt="graph"> <i class="fas fa-ellipsis-v"></i></td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/b.png" alt="b">Binance Coin <i class="fas fa-shopping-cart"></i></td>
+                        <td>$45,218.997</td>
+                        <td id="red">-4.62%</td>
+                        <td id="red">10.16%</td>
+                        <td>$850,378,457,751</td>
+                        <td>$454,544,445,144</td>
+                        <td>18,814,46,515 BNB</td>
+                        <td><img id="graph" src="img/graph.PNG" alt="graph"> <i class="fas fa-ellipsis-v"></i></td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/Tether.png" alt="Tether">Tether USDT <i class="fas fa-shopping-cart"></i></td>
+                        <td>$45,218.997</td>
+                        <td style="color: green;">-4.62%</td>
+                        <td id="red">10.16%</td>
+                        <td>$850,378,457,751</td>
+                        <td>$454,544,445,144</td>
+                        <td>18,814,46,515 USDT</td>
+                        <td><img id="graph" src="img/graph.PNG" alt="graph"> <i class="fas fa-ellipsis-v"></i></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="div6">
+            <p>Copyright 2020-2021 www.Cryptoshop.in</p>
+        </div>
+    </div>
+</body>
+
+</html>
